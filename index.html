@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>钟锐个人简历</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<article class="htmleaf-container">
+		
+		<div class="demo">
+		  <div class="demo__close-menu"></div>
+		  <div class="demo__section demo__section-1 inactive" data-section="1">
+		    <div class="demo__menu-btn"></div>
+		    <h2 class="demo__section-heading">发明专利</h2>
+
+						<div class="zldiv">
+							<img src="image/1.png">
+							<span>发明专利</span>
+						</div>
+
+						<div class="zldiv">
+							<img src="image/2.png">
+							<span>发明专利</span>
+						</div>
+
+						<div class="zldiv">
+							<img src="image/3.png">
+							<span>发明专利</span>
+						</div>
+
+						<div class="zldiv">
+							<img src="image/4.png">
+							<span>发明专利</span>
+						</div>
+
+						<div class="zldiv">
+							<img src="image/5.png">
+							<span>发明专利</span>
+						</div>
+
+						<div class="zldiv">
+							<img src="image/6.png">
+							<span>发明专利</span>
+						</div>
+		
+
+		  </div>
+		  <div class="demo__section demo__section-2 inactive" data-section="2">
+		    <div class="demo__menu-btn"></div>
+		    <h2 class="demo__section-heading">个人优势</h2>
+
+					<div class="zldiv">
+						<br>
+						<br>
+						<br>
+						<span style="text-align: left;color: #f9f9f9;">
+							从事软件开发多年、积累了大量项目全流程经验（售前方案-招投标-需求分析-架构设计-开发部署-验收运维-演示参观保障-维护客户关系）。
+							<br/>
+							bs+cs以及系统集成相关项目开发经验丰富（开发项目在新闻联播，人民日报、重庆新闻联播多次报道、并获得多项发明专利，多次保障市级和国家级领导对项目的参观）。
+							<br/>
+							熟练掌握：WinForm,web,C#,wpf,asp.net,.netcore<br>jquery,sql,mysql,
+							<br>
+							自学:python,java,android,wpf,unity,ps
+							<br/>
+							对IT行业的兴趣是进步最大的动力
+						
+						</span>
+					</div>
+		  </div>
+		  <div class="demo__section demo__section-3 inactive" data-section="3">
+		    <div class="demo__menu-btn"></div>
+		    <h2 class="demo__section-heading">项目介绍</h2>
+			<div class="zldiv">
+				<img src="image/rj/1 (1).jpg">
+				<span>系统截图</span>
+			</div>
+			<div class="zldiv">
+				<img src="image/rj/1 (1).png">
+				<span>系统截图</span>
+			</div>
+
+			<div class="zldiv">
+				<img src="image/rj/1 (2).jpg">
+				<span>系统截图</span>
+			</div>
+			
+			<div class="zldiv">
+				<img src="image/rj/1 (2).png">
+				<span>系统截图</span>
+			</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (3).png">
+			<span>系统截图</span>
+		</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (4).png">
+			<span>系统截图</span>
+		</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (5).png">
+			<span>系统截图</span>
+		</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (6).png">
+			<span>系统截图</span>
+		</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (7).png">
+			<span>系统截图</span>
+		</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (8).png">
+			<span>系统截图</span>
+		</div>
+
+		<div class="zldiv">
+			<img src="image/rj/1 (9).png">
+			<span>系统截图</span>
+		</div>
+
+	
+
+	
+			
+
+		  </div>
+		  <div class="demo__section demo__section-4 active" data-section="4">
+		    <div class="demo__menu-btn"></div>
+		    <h2 class="demo__section-heading">个人简历</h2>
+
+
+
+			<div class="zldiv">
+				<img src="image/jl.jpg">
+				<span>工作简历</span>
+			</div>
+			
+			
+
+		  </div>
+		</div>
+	</article>
+	
+	<script src='js/stopExecutionOnTimeout.js?t=1'></script>
+	<script src="js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function () {
+	    var $demo = $('.demo');
+	    var numOfSections = $('.demo__section').length;
+	    $(document).on('click', '.demo__menu-btn', function () {
+	        $demo.addClass('menu-active');
+	    });
+	    $(document).on('click', '.demo__close-menu', function () {
+	        $demo.removeClass('menu-active');
+	    });
+	    $(document).on('click', '.demo.menu-active .demo__section', function () {
+	        var $section = $(this);
+	        var index = +$section.data('section');
+	        $('.demo__section.active').removeClass('active');
+	        $('.demo__section.inactive').removeClass('inactive');
+	        $section.addClass('active');
+	        $demo.removeClass('menu-active');
+	        for (var i = index + 1; i <= numOfSections; i++) {
+	            if (window.CP.shouldStopExecution(1)) {
+	                break;
+	            }
+	            $('.demo__section[data-section=' + i + ']').addClass('inactive');
+	        }
+	        window.CP.exitedLoop(1);
+	    });
+	});
+	</script>
+</body>
+</html>
